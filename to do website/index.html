@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="background">
+        <div class="to-do-list">
+            <h1>To Do List</h1>
+        </div>
+        <div class="container">
+            <div class="todo">
+                <h2>Enter Task</h2>
+                <input type="text" id="textInput" name="task-text" placeholder="Add task here"> 
+                <input type="date" id="dateInput" name="date" max="2030-12-31"> 
+                <input type="color" id="colorInput" name="color" value="#000000"> 
+                <button onclick="addTaskButton()">+</button>
+                <audio id = "sadAudio" src="sad.mp3" style="display:none;" autoplay></audio>
+                <audio id = "celebrateAudio" src="celebrate.mp3" style="display:none;" autoplay></audio>    
+            </div>
+            <div>
+            <p id = "uncomplete">Uncompleted <p id ="dblclick">click right box to remove!</p></p> 
+            <ul id = "ulist">
+                <!-- <li class="checked">test1</li>
+                <li>task2</li>
+                <li>task3</li>
+                <li class="checked">test 4</li> -->    
+            </ul>
+            </div>
+            <div>
+            <p id = "completed">Completed</p>
+            <ul id = "clist">
+                <!-- <li >cHello</li>
+                <li>cthere</li> -->
+            </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
